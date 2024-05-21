@@ -8,7 +8,7 @@ import csv
 
 raw_data_folder = "C:\\Studia\\Big_Data\\Projekt\\Data_Sets\\Data-ready\\"
 
-# Read csv file to the dataframe
+# Read csv file to the Dataframe
 df_RegionsAccordingWorldBank = pd.read_csv(raw_data_folder + "world-regions-according-to-the-world-bank.csv",encoding='latin-1', dtype=str)
 df_continents = pd.read_csv(raw_data_folder + "continents-according-to-our-world-in-data.csv",encoding='latin-1', dtype=str)
 df_FoodBalanceSheets = pd.read_csv(raw_data_folder + "FoodBalanceSheets_E_All_Data_(Normalized).csv",encoding='latin-1', dtype=str)
