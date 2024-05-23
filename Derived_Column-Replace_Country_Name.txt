@@ -1,0 +1,36 @@
+REPLACE([Area_utf8],"Bolivia (Plurinational State of)","Bolivia")
+REPLACE([Area_utf8],"Brunei Darussalam","Brunei") 
+--REPLACE([Area_utf8],"C�te d'Ivoire","Cote d'Ivoire") 
+REPLACE([Area_utf8],"Democratic People's Republic of Korea","North Korea")
+REPLACE([Area_utf8],"Iran (Islamic Republic of)","Iran") 
+REPLACE([Area_utf8],"Lao People's Democratic Republic","Laos") 
+REPLACE([Area_utf8],"Netherlands (Kingdom of the)","Netherlands") 
+REPLACE([Area_utf8],"Micronesia (Federated States of)","Micronesia (country)") 
+REPLACE([Area_utf8],"Republic of Korea","South Korea") 
+REPLACE([Area_utf8],"Republic of Moldova","Moldova")
+REPLACE([Area_utf8],"Russian Federation","Russia") 
+REPLACE([Area_utf8],"Syrian Arab Republic","Syria") 
+REPLACE([Area_utf8],"China, Taiwan Province of","Taiwan") 
+REPLACE([Area_utf8],"China, Macao SAR","Macao") 
+REPLACE([Area_utf8],"United States of America","United States") 
+REPLACE([Area_utf8],"Venezuela (Bolivarian Republic of)","Venezuela") 
+REPLACE([Area_utf8],"Viet Nam","Vietnam")
+REPLACE([Area_utf8],"T�rkiye","Turkey")
+REPLACE([Area_utf8],"United Kingdom of Great Britain and Northern Ireland","United Kingdom")
+REPLACE([Area_utf8],"United Republic of Tanzania","Tanzania")
+
+######################################
+## Configuration of Derived Column
+######################################
+Derived Column Name: Area_utf8
+
+Derived Column Replace Area_utf8
+
+Expression:
+REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(Area_utf8,"Bolivia (Plurinational State of)","Bolivia"),"Brunei Darussalam","Brunei"),"Democratic People's Republic of Korea","North Korea"),"Iran (Islamic Republic of)","Iran"),"Lao People's Democratic Republic","Laos"),"Netherlands (Kingdom of the)","Netherlands"),"Micronesia (Federated States of)","Micronesia (country)"),"Republic of Korea","South Korea"),"Republic of Moldova","Moldova"),"Russian Federation","Russia"),"Syrian Arab Republic","Syria"),"China, Taiwan Province of","Taiwan"),"China, Macao SAR","Macao"),"United States of America","United States"),"Venezuela (Bolivarian Republic of)","Venezuela"),"Viet Nam","Vietnam"),"United Kingdom of Great Britain and Northern Ireland","United Kingdom"),"United Republic of Tanzania","Tanzania")
+
+Data Type: Unicode string [DT_WSTR]
+
+Lenght: 55
+
+######################################
