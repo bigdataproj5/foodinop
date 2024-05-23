@@ -1,6 +1,12 @@
-﻿CREATE SCHEMA vs;
+﻿--
+--DROP SCHEMA vs;
+--DROP TABLE IF EXISTS vs.Life_expectancy;
+--DROP TABLE IF EXISTS vs.Countries;
+--DROP TABLE IF EXISTS vs.Food_balance_n;
+--DROP TABLE IF EXISTS vs.Food_balance_o;
 
-DROP TABLE IF EXISTS vs.Life_expectancy;
+CREATE SCHEMA vs;
+
 CREATE TABLE vs.Life_expectancy (
 	"ID_LE" int NOT NULL IDENTITY(1,1) PRIMARY KEY
 	,"ID_C" int
@@ -16,8 +22,6 @@ CREATE TABLE vs.Life_expectancy (
 --SELECT COUNT(*)
 --FROM vs.Life_expectancy
 
-
-DROP TABLE IF EXISTS vs.Food_balance_o
 CREATE TABLE vs.Food_balance_o (
 	"ID_FBO" int NOT NULL IDENTITY(1,1) PRIMARY KEY
 	,"ID_C" int
@@ -32,21 +36,18 @@ CREATE TABLE vs.Food_balance_o (
 
 );
 
-DROP TABLE IF EXISTS vs.Food_balance_n
 CREATE TABLE vs.Food_balance_n (
 	"ID_FBO" int NOT NULL IDENTITY(1,1) PRIMARY KEY
 	,"ID_C" int
 	,"Country" nvarchar(55) NOT NULL
-	,"Item" nvarchar(31) NOT NULL
-	,"Element" nvarchar(8) NOT NULL
+	,"Item" varchar(50) NOT NULL
+	,"Element" varchar(50) NOT NULL
 	,"Year" int NOT NULL
-	,"Unit" nvarchar(12) NOT NULL
+	,"Unit" varchar(50) NOT NULL
 	,"Value" float NOT NULL
 	--,FOREIGN KEY (ID_C) REFERENCES knime.Countries(ID_C)
 );
 
-
-DROP TABLE IF EXISTS vs.Countries;
 CREATE TABLE vs.Countries (
 	"ID_C" int NOT NULL IDENTITY(1,1) PRIMARY KEY
 	,"Country" varchar(50) NOT NULL
