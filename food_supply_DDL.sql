@@ -25,15 +25,13 @@ CREATE TABLE vs.Life_expectancy (
 CREATE TABLE vs.Food_balance_o (
 	"ID_FBO" int NOT NULL IDENTITY(1,1) PRIMARY KEY
 	,"ID_C" int
-	,"Country" varchar(44) NOT NULL
-	,"Item" varchar(31) NOT NULL
-	,"Element" varchar(38) NOT NULL
+	,"Country" nvarchar(55) NOT NULL
+	,"Item" varchar(50) NOT NULL
+	,"Element" varchar(50) NOT NULL
 	,"Year" int NOT NULL
-	,"Unit" varchar(12) NOT NULL
+	,"Unit" varchar(50) NOT NULL
 	,"Value" float NOT NULL
 	--,FOREIGN KEY (ID_C) REFERENCES knime.Countries(ID_C)
-
-
 );
 
 CREATE TABLE vs.Food_balance_n (
