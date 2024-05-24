@@ -48,19 +48,18 @@ CREATE TABLE vs.Food_balance_n (
 
 CREATE TABLE vs.Countries (
 	"ID_C" int NOT NULL IDENTITY(1,1) PRIMARY KEY
-	,"Country" varchar(50) NOT NULL
+	,"Country" nvarchar(59) NOT NULL
 	,"Country_code" varchar(8) NOT NULL
 	,"Continent_update_year" int NOT NULL
-	,"Continent" varchar(50) NOT NULL
-	,"WHO_Region_update_year" int NOT NULL
-	,"WHO_Region" varchar(50) NOT NULL
-	,"World_Bank_update_year" int NOT NULL
-	,"World_Bank_Region" varchar(50) NOT NULL
-	,"United_Nations_update_year" int NOT NULL
-	,"United_Nations_Region" varchar(50) NOT NULL
-
-
+	,"Continent" nvarchar(50) NOT NULL
+	,"WHO_Region_update_year" int
+	,"WHO_Region" nvarchar(50)
+	,"World_Bank_update_year" int
+	,"World_Bank_Region" nvarchar(50)
+	,"United_Nations_update_year" int
+	,"United_Nations_Region" nvarchar(50)
 );
+
 
 CREATE TABLE vs.FoodBalance (
 "ID_FooBl" int NOT NULL IDENTITY(1,1) PRIMARY KEY
