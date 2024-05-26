@@ -1,0 +1,12 @@
+In all Country files has been found 2 Countries/Regions without a proper Country_Code:
+1. "Cocos (Keeling) Islands"
+2. "Micronesia
+
+Because there are only 2 such Countries and the "Cocos (Keeling) Islands" is not in use the change will be done only for "Micronesia" country.
+
+The Derived Column Configuration:
+Derived Column Name: Country_Code_utf8
+Derived Column: Replace 'Country_Code_utf8'
+expression: Country_utf8 == "Micronesia" ? "FSM" : Country_Code_utf8
+Data Type: Unicode string [DT_WSTR]
+Length: 8
